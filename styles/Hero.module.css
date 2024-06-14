@@ -1,0 +1,19 @@
+.hero {
+    padding: 26px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.photos {
+    max-width: 450px;
+    height: 292px;
+    align-self: center;
+}
+
+.intro {
+    width: 320px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 17.6px;
+    padding-left: 36px;
+}
