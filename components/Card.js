@@ -1,8 +1,8 @@
 import styles from "@/styles/Card.module.css"
 import Image from "next/image";
-import star from "@/public/star.png"
 
-export default function Card({pic, rating, reviewCount, country, title, price}) {
+
+export default function Card({pic, logo, rating, reviewCount, country, title, price}) {
     return (
         <div className={styles.card}>
             <div>
@@ -17,16 +17,17 @@ export default function Card({pic, rating, reviewCount, country, title, price}) 
             <div>  
                 <div className={styles.cardstats}>
                     <Image 
-                        className={styles.logo} 
-                        src={star}
+                        src={logo}
                         alt="red star"
+                        width={14}
+                        height={14}
                     />
-                    <span>{rating}</span>
-                    <span className="grey">{reviewCount}</span>
+                    <span>&nbsp;{rating}&nbsp;</span>
+                    <span className="grey">({reviewCount}) •&nbsp;</span>
                     <span className="grey">{country}</span>
                 </div>
                 <h2>{title}</h2>
-                <p><span className="bold">From {price}</span> / person</p>
+                <p><span className="bold">From ${price}</span> / person</p>
             </div>
 
         </div>

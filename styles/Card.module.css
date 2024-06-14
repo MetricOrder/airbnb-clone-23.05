@@ -9,11 +9,6 @@
     border-radius: 9px;
 }
 
-.logo {
-    width: 14px;
-    height: 14px;
-}
-
 .cardstats {
     display: flex;
     align-items: left;
