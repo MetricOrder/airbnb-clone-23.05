@@ -1,6 +1,6 @@
 import styles from "@/styles/Card.module.css"
 import Image from "next/image";
-import star from "@/images/star.png"
+import star from "@/public/star.png"
 
 export default function Card({pic, rating, reviewCount, country, title, price}) {
     return (

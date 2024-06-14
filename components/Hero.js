@@ -1,6 +1,6 @@
 import styles from "@/styles/Hero.module.css"
 import Image from "next/image";
-import img from "@/images/photo-grid.png"
+import img from "@/public/photo-grid.png"
 
 export default function Hero() {
     return(
