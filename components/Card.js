@@ -11,9 +11,16 @@ export default function Card({
   price,
   openSpots,
 }) {
+  let badgeText;
+  if (openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (location === "Online") {
+    badgeText = "ONLINE";
+  }
+
   return (
     <div className={styles.card}>
-      {openSpots === 0 && <div className={styles.cardBadge}>SOLD OUT!</div>}
+      {badgeText && <div className={styles.cardBadge}>{badgeText}</div>}
       <div>
         <Image
           className={styles.photo}
