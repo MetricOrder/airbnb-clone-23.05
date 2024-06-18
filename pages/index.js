@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { Poppins } from "next/font/google";
-import MainPage from "../components/MainPage";
+import MainContent from "../components/MainContent";
 
-const poppins = Poppins({ 
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
         <title>Airbnb Clone</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <MainPage />
+      <MainContent />
     </div>
   );
 }

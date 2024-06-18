@@ -1,6 +1,6 @@
 import styles from "@/styles/Navbar.module.css"
 import Image from "next/image";
-import img from "@/public/airbnb-logo.png"
+import img from "@/public/images/airbnb-logo.png"
 
 
 export default function Navbar() {
