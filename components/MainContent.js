@@ -16,6 +16,7 @@ export default function MainContent() {
       location={info.location}
       title={info.title}
       price={info.price}
+      openSpots={info.openSpots}
     />
   ));
 
