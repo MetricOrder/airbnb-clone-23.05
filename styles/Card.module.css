@@ -2,6 +2,7 @@
   width: 176px;
   font-size: 12px;
   flex: 0 0 auto;
+  position: relative;
 }
 
 .photo {
@@ -13,4 +14,15 @@
 .cardstats {
   display: flex;
   align-items: left;
+}
+
+.cardBadge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: #ffbf69;
+  border: solid black 2px;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
