@@ -2,11 +2,13 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Card from "@/components/Card";
 import cardData from "@/data/data";
+import styles from "@/styles/MainContent.module.css"
+
 
 export default function MainContent() {
   const displayInfo = cardData.map((info) => (
     <Card
-      id={info.id}
+      key={info.id}
       pic={info.coverImg}
       logo={"/star.png"}
       rating={info.stats.rating}
@@ -21,7 +23,7 @@ export default function MainContent() {
     <>
       <Navbar />
       <Hero />
-      <div>{displayInfo}</div>
+      <div className={styles.row}>{displayInfo}</div>
     </>
   );
 }
