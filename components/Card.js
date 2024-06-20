@@ -1,7 +1,7 @@
 import styles from "@/styles/Card.module.css";
 import Image from "next/image";
 
-export default function Card({ logo, info }) {
+export default function Card({ info }) {
   let badgeText;
   if (info.openSpots === 0) {
     badgeText = "SOLD OUT";
